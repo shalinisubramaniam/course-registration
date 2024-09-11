@@ -1,0 +1,114 @@
+.courses-section {
+    padding: 20px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased min-width */
+    gap: 30px; /* Increased gap between cards */
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Slightly increased border radius */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly increased shadow */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.course-card h3 {
+    margin-bottom: 15px; /* Increased spacing */
+    font-size: 1.5rem; /* Increased font size */
+    color: #34495e;
+}
+
+.course-card p {
+    margin-bottom: 20px; /* Increased spacing */
+    font-size: 1.1rem; /* Increased font size */
+    color: #7f8c8d;
+}
+
+.course-link {
+    display: inline-block;
+    padding: 12px 25px; /* Increased padding */
+    font-size: 1rem; /* Increased font size */
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.course-link:hover {
+    background-color: #16a085;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: left;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #16a085;
+}
